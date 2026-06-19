@@ -1,7 +1,7 @@
 import { prisma } from '@/lib/db'
 import type { User } from '@prisma/client'
 
-const ADMIN_KEY = process.env.ADMIN_KEY ?? 'mbdhc-admin-2026'
+const ADMIN_KEY = process.env.ADMIN_KEY ?? '19977991'
 
 function AccessDenied() {
   return (
