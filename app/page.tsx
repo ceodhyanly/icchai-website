@@ -93,24 +93,47 @@ const pillars = [
   },
 ]
 
-const institutionalPartners = [
+const mainPartners = [
+  {
+    name: 'YogaXBiofeedback Pvt Ltd',
+    dept: 'Dhyanly',
+    role: 'Primary Organiser',
+    desc: 'AI-powered software and hardware for mind-body and biofeedback sciences — developer of wearable biosignal platforms and digital health tools for contemplative practice.',
+    logo: '/images/dhyanlylogo.jpg',
+    logoAlt: 'YogaXBiofeedback Pvt Ltd (Dhyanly)',
+  },
   {
     name: 'University of Central Florida',
     dept: 'The India Center',
-    country: 'Orlando, FL, USA',
     role: 'Convening Institution',
+    desc: "UCF's dedicated centre for India-focused research, education and cultural engagement — the convening academic home for MBDHC 2026.",
     logo: '/images/ucf.jpg',
     logoAlt: 'University of Central Florida',
   },
   {
     name: 'Notre Dame of Maryland University',
     dept: 'School of Integrative Health (SOIH)',
-    country: 'Baltimore, MD, USA',
     role: 'Institutional Partner',
+    desc: 'Baltimore, MD — graduate home of accredited yoga therapy and integrative health programs within a liberal-arts tradition.',
     logo: '/images/ndmulogo.jpg',
     logoAlt: 'Notre Dame of Maryland University',
   },
+  {
+    name: 'IIT Delhi',
+    dept: 'National Resource Centre for Value Education in Engineering (NRCVEE)',
+    role: 'Conference Venue · Institutional Partner',
+    desc: 'New Delhi, India — the in-person venue for MBDHC 2026. The NRCVEE integrates ethics and value education into engineering curricula across India.',
+    logo: '/images/iidelhilogo.jpg',
+    logoAlt: 'National Resource Centre for Value Education in Engineering, IIT Delhi',
+  },
 ]
+
+const partnershipInProgress = {
+  name: 'Loyola Marymount University',
+  dept: 'Bellarmine College of Liberal Arts — MA in Yoga Studies',
+  logo: '/images/lmulogo.webp',
+  logoAlt: 'Loyola Marymount University',
+}
 
 const speakerInstitutions = [
   { logo: '/images/utah.png', alt: 'University of Utah', name: 'University of Utah' },
@@ -118,6 +141,128 @@ const speakerInstitutions = [
   { logo: '/images/iitmandi.jpg', alt: 'IIT Mandi', name: 'IIT Mandi' },
   { logo: '/images/ucf.jpg', alt: 'University of Central Florida', name: 'UCF' },
   { logo: '/images/ndmulogo.jpg', alt: 'Notre Dame of Maryland University', name: 'NDMU' },
+  { logo: '/images/lmulogo.webp', alt: 'Loyola Marymount University', name: 'LMU' },
+  { logo: '/images/iidelhilogo.jpg', alt: 'IIT Delhi — NRCVEE', name: 'IIT Delhi' },
+]
+
+const organizers = [
+  {
+    name: 'Satyam Tiwari',
+    role: 'Convener, MBDHC 2026',
+    subrole: 'Head of Program, Technology & Production',
+    affiliation: 'IIT Mandi · Founder, YogaXBiofeedback Pvt Ltd (Dhyanly)',
+    photo: '/organizers/satyam-tiwari.jpg',
+    profileUrl: 'https://www.dhyanly.com',
+  },
+  {
+    name: 'Dr. Steve Haberlin',
+    role: 'Co-Convener, MBDHC 2026',
+    subrole: 'Head of Global Outreach',
+    affiliation: 'University of Central Florida',
+    photo: '/organizers/steve-haberlin.jpg',
+    profileUrl: 'https://ccie.ucf.edu/person/steve-haberlin/',
+  },
+  {
+    name: 'Prof. Amy Wheeler-Mantoan',
+    role: 'Chair, Academic Programme Committee',
+    subrole: '',
+    affiliation: 'Notre Dame of Maryland University',
+    photo: '/organizers/amy-wheeler-mantoan.jpg',
+    profileUrl: 'https://www.ndm.edu/directory/amy-wheeler-mantoan',
+  },
+  {
+    name: 'Aditya Pandey',
+    role: 'Head of Partnerships & Sponsorships India',
+    subrole: '',
+    affiliation: 'IIT Mandi',
+    photo: '/organizers/aditya-pandey.jpg',
+    profileUrl: 'https://www.linkedin.com/in/adithya-kumar-pandey',
+  },
+]
+
+const speakers = [
+  {
+    name: 'Shri Akhilesh Mishra',
+    title: 'Former Ambassador of India to Ireland · High Commissioner to the Maldives',
+    affiliation: 'Indian Foreign Service (Retd.)',
+    affiliationUrl: '',
+    profileUrl: 'https://ie.linkedin.com/in/akhilesh-mishra-002456b6',
+    photo: '/speakers/akhilesh-mishra.jpeg',
+    bio: "Three decades of senior diplomacy followed by independent study of Sanskrit philosophical texts — his close reading of the Yoga Sutra and Upanishads situates India's contemplative heritage at the centre of a living intellectual tradition.",
+  },
+  {
+    name: 'Prof. Christopher Key Chapple',
+    title: 'Doshi Professor of Indic and Comparative Theology · Director, MA in Yoga Studies · Department of Theological Studies',
+    affiliation: 'Loyola Marymount University',
+    affiliationUrl: 'https://www.lmu.edu',
+    profileUrl: 'https://scholars.lmu.edu/en/persons/christopher-chapple/',
+    photo: '/speakers/christopher-key-chapple.jpg',
+    bio: 'Holds the Doshi Chair in Indic and Comparative Theology at LMU and has authored more than twenty books tracing yoga, Jainism and Buddhism from classical textual sources through to contemporary practice and ecology.',
+  },
+  {
+    name: 'Dr. Steve Haberlin',
+    title: 'Assistant Professor, Curriculum & Instruction · College of Community Innovation and Education',
+    affiliation: 'University of Central Florida',
+    affiliationUrl: 'https://www.ucf.edu',
+    profileUrl: 'https://ccie.ucf.edu/person/steve-haberlin/',
+    photo: '/speakers/steve-haberlin.jpg',
+    bio: 'Investigates how meditation and mindfulness integrate with emerging educational technology in structured academic settings — author of Meditation in the College Classroom and Meta-Meditation.',
+  },
+  {
+    name: 'Prof. Amy Wheeler-Mantoan',
+    title: 'Professor & Chair, Yoga Therapy Department · School of Integrative Health',
+    affiliation: 'Notre Dame of Maryland University',
+    affiliationUrl: 'https://www.ndm.edu',
+    profileUrl: 'https://www.ndm.edu/directory/amy-wheeler-mantoan',
+    photo: '/speakers/amy-wheeler-mantoan.jpg',
+    bio: 'Chairs the Yoga Therapy Department at Notre Dame of Maryland University and brings over two decades of clinical experience translating yoga into evidence-based therapeutic and sport-psychology practice, including work with national Olympic teams.',
+  },
+  {
+    name: 'Satyam Tiwari',
+    title: 'Founder & CEO, YogaXBiofeedback Pvt Ltd (Dhyanly) · Pioneer of Contemplative AI',
+    subrole: 'SRF, IKSMHA Centre, IIT Mandi',
+    affiliation: 'IIT Mandi',
+    affiliationUrl: 'https://www.iitmandi.ac.in',
+    profileUrl: 'https://www.dhyanly.com',
+    photo: '/speakers/satyam-tiwari.jpg',
+    bio: 'A practitioner of the Svara Yoga tradition for over two decades, academically trained in yoga, Indian Knowledge Systems, AI and technology. As founder of Dhyanly and pioneer of Contemplative AI, he builds clinical-grade biosignal and biofeedback platforms translating IKS into rigorous mind-body digital therapeutics.',
+  },
+  {
+    name: 'Prof. James Gomes',
+    title: 'Professor, Kusuma School of Biological Sciences · Chair, NRCVEE Research Committee',
+    affiliation: 'IIT Delhi',
+    affiliationUrl: 'https://home.iitd.ac.in',
+    profileUrl: 'https://bioschool.iitd.ac.in/faculty-profile/39',
+    photo: '/speakers/james-gomes.png',
+    bio: 'Applies systems-biology and computational methods to map disease networks at IIT Delhi, and as Chair of the NRCVEE Research Committee works to embed value education and ethical reasoning into the engineering curriculum.',
+  },
+  {
+    name: 'Dr. Amit Sethi',
+    title: 'Associate Professor, Department of Occupational & Recreational Therapies · Director, NERD Lab',
+    affiliation: 'University of Utah',
+    affiliationUrl: 'https://www.utah.edu',
+    profileUrl: 'https://health.utah.edu/staff/amit-sethi',
+    photo: '/speakers/amit-sethi.jpg',
+    bio: 'Directs the NERD Lab at the University of Utah — applying transcranial brain stimulation and movement science to develop evidence-based rehabilitation protocols for stroke recovery and neuromodulation-driven motor learning.',
+  },
+  {
+    name: 'Dr. Rohit Saluja',
+    title: 'Assistant Professor, School of Computing & Electrical Engineering',
+    affiliation: 'IIT Mandi',
+    affiliationUrl: 'https://www.iitmandi.ac.in',
+    profileUrl: 'https://scee.iitmandi.ac.in/faculty_personal.php?id=4jqlmfy',
+    photo: '/speakers/rohit-saluja.jpg',
+    bio: 'Develops computer-vision and applied machine-learning systems for human-interactive environments at IIT Mandi — his work in automated pose estimation and activity recognition has direct application in AI-mediated movement and breath analysis.',
+  },
+  {
+    name: 'Dr. Kunal Mooley',
+    title: 'Assistant Professor, Department of Space, Planetary & Astronomical Sciences & Engineering',
+    affiliation: 'IIT Kanpur',
+    affiliationUrl: 'https://www.iitk.ac.in',
+    profileUrl: 'https://www.iitk.ac.in/kunal-prakash-mooley',
+    photo: '/speakers/kunal-mooley.png',
+    bio: 'Astrophysicist at IIT Kanpur whose gravitational-wave and radio-transient research — including landmark VLBI imaging of a neutron-star merger jet — is accompanied by co-founding an interdisciplinary institute at the intersection of physical science and consciousness studies.',
+  },
 ]
 
 export default function Home() {
@@ -161,21 +306,24 @@ export default function Home() {
           <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', marginBottom: 48, alignItems: 'center' }}>
             <span className="hero-chip hero-chip-teal">Inaugural Edition</span>
             <span className="hero-chip">Oct 22–23, 2026</span>
-            <span className="hero-chip">Online</span>
+            <span className="hero-chip">Hybrid Conference</span>
             <span className="hero-chip">Free to Attend</span>
           </div>
 
           {/* Title — explicit white */}
           <h1 className="display" style={{ color: '#FFFFFF', maxWidth: 880, marginBottom: 32 }}>
-            Mind-Body &amp;<br />Digital Health<br />
+            Mind-Body, AI &amp;<br />Digital Health<br />
             <span style={{ color: '#C69232' }}>Conference</span>
           </h1>
 
           <p style={{ fontSize: 18, lineHeight: 1.75, color: 'rgba(228,232,241,0.75)', maxWidth: 600, marginBottom: 16 }}>
             International Conference on AI, Yoga, Meditation and Mindfulness in the Digital Age — the first sustained dialogue between ancient contemplative science and modern technology.
           </p>
-          <p style={{ fontSize: 12, color: 'rgba(228,232,241,0.45)', marginBottom: 48, letterSpacing: '0.04em' }}>
-            18:30–22:30 IST &nbsp;·&nbsp; 9:00 am–1:00 pm EST &nbsp;·&nbsp; 3:00–7:00 pm CET
+          <p style={{ fontSize: 13, color: 'rgba(228,232,241,0.6)', marginBottom: 8, letterSpacing: '0.01em' }}>
+            <span style={{ color: '#C69232', fontWeight: 600 }}>In-person venue:</span> IIT Delhi, New Delhi, India &nbsp;·&nbsp; Presenters and attendees welcome to join on-site
+          </p>
+          <p style={{ fontSize: 12, color: 'rgba(228,232,241,0.38)', marginBottom: 48, letterSpacing: '0.04em' }}>
+            Online attendance available worldwide &nbsp;·&nbsp; 18:30–22:30 IST &nbsp;·&nbsp; 9:00 am–1:00 pm EST &nbsp;·&nbsp; 3:00–7:00 pm CET
           </p>
 
           <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
@@ -189,6 +337,114 @@ export default function Home() {
             <span style={{ fontSize: 14, fontWeight: 600, color: 'rgba(228,232,241,0.65)' }}>YogaXBiofeedback Pvt Ltd (Dhyanly)</span>
             <span style={{ color: 'rgba(255,255,255,0.2)' }}>×</span>
             <span style={{ fontSize: 14, fontWeight: 600, color: 'rgba(228,232,241,0.65)' }}>The India Center, University of Central Florida</span>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── PARTNERS ───────────────────────────────────────── */}
+      <section id="partners" className="section" style={{ background: 'var(--surface)', borderTop: '1px solid var(--border)' }}>
+        <div className="container">
+          <p className="label" style={{ marginBottom: 20 }}>Organisers &amp; Institutional Partners</p>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: 48, flexWrap: 'wrap', gap: 24 }}>
+            <h2 className="headline" style={{ maxWidth: 520 }}>
+              Convened with leading institutions
+            </h2>
+            <p className="body" style={{ maxWidth: 380 }}>
+              MBDHC 2026 is organised and academically anchored by partners spanning India and the United States.
+            </p>
+          </div>
+
+          {/* Main partner cards — top 3 in equal columns */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 1, background: 'var(--border)', marginBottom: 1 }}>
+            {mainPartners.slice(0, 3).map(inst => (
+              <div key={inst.name} className="hover-cell" style={{ background: 'var(--surface)', padding: '44px 36px', display: 'flex', flexDirection: 'column' }}>
+                <div style={{ position: 'relative', width: '100%', height: 140, marginBottom: 28 }}>
+                  <Image
+                    src={inst.logo}
+                    alt={inst.logoAlt}
+                    fill
+                    style={{ objectFit: 'contain', objectPosition: 'left center' }}
+                    unoptimized
+                  />
+                </div>
+                <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--teal)', marginBottom: 10 }}>{inst.role}</p>
+                <h3 style={{ fontSize: 17, fontWeight: 700, color: 'var(--foreground)', marginBottom: 4, letterSpacing: '-0.01em' }}>{inst.name}</h3>
+                <p style={{ fontSize: 13, color: 'var(--muted-light)', marginBottom: 10 }}>{inst.dept}</p>
+                <p className="caption" style={{ lineHeight: 1.55 }}>{inst.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* IIT Delhi — full-width featured row (wide banner logo needs full horizontal space) */}
+          <div className="hover-cell" style={{ background: 'var(--surface)', padding: '44px 36px', display: 'flex', alignItems: 'center', gap: 48, flexWrap: 'wrap', marginBottom: 40, borderTop: '1px solid var(--border)' }}>
+            <div style={{ position: 'relative', flexShrink: 0, width: '100%', maxWidth: 700, height: 120 }}>
+              <Image
+                src={mainPartners[3].logo}
+                alt={mainPartners[3].logoAlt}
+                fill
+                style={{ objectFit: 'contain', objectPosition: 'left center' }}
+                unoptimized
+              />
+            </div>
+            <div style={{ flex: 1, minWidth: 220 }}>
+              <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--teal)', marginBottom: 10 }}>{mainPartners[3].role}</p>
+              <h3 style={{ fontSize: 17, fontWeight: 700, color: 'var(--foreground)', marginBottom: 4, letterSpacing: '-0.01em' }}>{mainPartners[3].name}</h3>
+              <p style={{ fontSize: 13, color: 'var(--muted-light)', marginBottom: 10 }}>{mainPartners[3].dept}</p>
+              <p className="caption" style={{ lineHeight: 1.55 }}>{mainPartners[3].desc}</p>
+            </div>
+          </div>
+
+          {/* LMU — partnership in process */}
+          <div style={{
+            display: 'flex', alignItems: 'center', gap: 28, flexWrap: 'wrap',
+            padding: '24px 32px', borderRadius: 8,
+            border: '1px dashed var(--border-mid)', background: 'var(--surface-2)',
+            marginBottom: 64,
+          }}>
+            <div style={{ height: 56, flexShrink: 0, display: 'flex', alignItems: 'center' }}>
+              <Image
+                src={partnershipInProgress.logo}
+                alt={partnershipInProgress.logoAlt}
+                width={180}
+                height={52}
+                style={{ width: 'auto', height: '100%', maxWidth: '100%', objectFit: 'contain', objectPosition: 'left center', opacity: 0.75 }}
+                unoptimized
+              />
+            </div>
+            <div style={{ flex: 1, minWidth: 220 }}>
+              <h3 style={{ fontSize: 14, fontWeight: 700, color: 'var(--foreground)', marginBottom: 2 }}>{partnershipInProgress.name}</h3>
+              <p className="caption">{partnershipInProgress.dept}</p>
+            </div>
+            <span className="chip" style={{ fontSize: 10.5, letterSpacing: '0.08em', textTransform: 'uppercase', flexShrink: 0 }}>Partnership in Process</span>
+          </div>
+
+          {/* Speaker institutions logo strip — auto-scrolling marquee */}
+          <div style={{ borderTop: '1px solid var(--border)', paddingTop: 48 }}>
+            <p className="label" style={{ marginBottom: 32 }}>Speakers represent institutions including</p>
+            <div className="logo-marquee-wrap">
+              <div className="logo-marquee-track">
+                {[...speakerInstitutions, ...speakerInstitutions].map((si, i) => (
+                  <div key={`${si.name}-${i}`} style={{
+                    width: 300,
+                    height: 160,
+                    flexShrink: 0,
+                    marginRight: 80,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}>
+                    <Image
+                      src={si.logo}
+                      alt={si.alt}
+                      width={300}
+                      height={160}
+                      style={{ width: '100%', height: '100%', objectFit: 'contain', objectPosition: 'center' }}
+                      unoptimized
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -238,7 +494,7 @@ export default function Home() {
               { n: '2', label: 'Conference Days' },
               { n: '6', label: 'Research Pillars' },
               { n: '3', label: 'Parallel Tracks per Day' },
-              { n: '6', label: 'Partner Institutions' },
+              { n: '7', label: 'Partner Institutions' },
             ].map((s, i) => (
               <div key={s.label} style={{
                 padding: '40px 32px',
@@ -342,65 +598,94 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ─── INSTITUTIONS ───────────────────────────────────── */}
-      <section id="institutions" className="section" style={{ background: 'var(--surface)', borderTop: '1px solid var(--border)' }}>
+      {/* ─── ORGANIZING TEAM ────────────────────────────────── */}
+      <section id="organizers" className="section" style={{ background: 'var(--surface)', borderTop: '1px solid var(--border)' }}>
         <div className="container">
-          <p className="label" style={{ marginBottom: 20 }}>Academic &amp; Institutional Partners</p>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: 48, flexWrap: 'wrap', gap: 24 }}>
-            <h2 className="headline" style={{ maxWidth: 500 }}>
-              Institutions shaping the dialogue
+          <p className="label" style={{ marginBottom: 20 }}>Organizing Committee</p>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: 56, flexWrap: 'wrap', gap: 24 }}>
+            <h2 className="headline" style={{ maxWidth: 480 }}>
+              The team behind MBDHC 2026
             </h2>
             <p className="body" style={{ maxWidth: 380 }}>
-              MBDHC 2026 is convened in partnership with leading universities across India and the United States.
+              Scholars, practitioners and technologists who have convened this conference and are responsible for its programme, partnerships and global reach.
             </p>
           </div>
 
-          {/* Partner institution cards — UCF + NDMU */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 1, background: 'var(--border)', marginBottom: 64 }}>
-            {institutionalPartners.map(inst => (
-              <div key={inst.name} className="hover-cell" style={{ background: 'var(--surface)', padding: '40px 36px', display: 'flex', flexDirection: 'column' }}>
-                <div style={{ marginBottom: 28, height: 96, display: 'flex', alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 28 }}>
+            {organizers.map((org, i) => (
+              <div key={org.name} className={`organizer-card${i === 0 ? ' organizer-card--featured' : ''}`}>
+                {/* Photo */}
+                <div style={{ position: 'relative', width: '100%', aspectRatio: '1 / 1', background: 'var(--surface-3)', overflow: 'hidden' }}>
                   <Image
-                    src={inst.logo}
-                    alt={inst.logoAlt}
-                    width={320}
-                    height={90}
-                    style={{ width: 'auto', height: '100%', maxWidth: '100%', objectFit: 'contain', objectPosition: 'left center' }}
+                    src={org.photo}
+                    alt={org.name}
+                    fill
+                    sizes="(max-width: 768px) 90vw, 300px"
+                    style={{ objectFit: 'cover', objectPosition: 'center 15%', filter: 'grayscale(40%) sepia(5%) saturate(0.9) contrast(1.03)' }}
                     unoptimized
                   />
+                  {i === 0 && (
+                    <div style={{ position: 'absolute', top: 12, left: 12, padding: '3px 10px', background: 'var(--teal)', borderRadius: 3, fontSize: 9.5, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#fff' }}>
+                      Convener
+                    </div>
+                  )}
                 </div>
-                <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--teal)', marginBottom: 10 }}>{inst.role}</p>
-                <h3 style={{ fontSize: 16, fontWeight: 700, color: 'var(--foreground)', marginBottom: 4, letterSpacing: '-0.01em' }}>{inst.name}</h3>
-                <p style={{ fontSize: 13, color: 'var(--muted-light)', marginBottom: 6 }}>{inst.dept}</p>
-                <p className="caption">{inst.country}</p>
+
+                {/* Info */}
+                <div style={{ padding: '22px 24px 26px' }}>
+                  <h3 style={{ fontSize: 16, fontWeight: 700, color: 'var(--foreground)', marginBottom: 4, letterSpacing: '-0.01em', lineHeight: 1.3 }}>{org.name}</h3>
+                  <p style={{ fontSize: 12, fontWeight: 700, color: 'var(--teal)', letterSpacing: '0.01em', marginBottom: org.subrole ? 2 : 8, lineHeight: 1.45 }}>{org.role}</p>
+                  {org.subrole && <p style={{ fontSize: 11, color: 'var(--muted)', marginBottom: 8, lineHeight: 1.4 }}>{org.subrole}</p>}
+                  <p style={{ fontSize: 12, color: 'var(--muted-light)', marginBottom: 14, lineHeight: 1.5 }}>{org.affiliation}</p>
+                  <a href={org.profileUrl} target="_blank" rel="noopener noreferrer" className="speaker-link" style={{ fontSize: 12, fontWeight: 600 }}>Profile →</a>
+                </div>
               </div>
             ))}
           </div>
+        </div>
+      </section>
 
-          {/* Speaker institutions logo strip */}
-          <div style={{ borderTop: '1px solid var(--border)', paddingTop: 48 }}>
-            <p className="label" style={{ marginBottom: 32 }}>Speakers represent institutions including</p>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 16, alignItems: 'center' }}>
-              {speakerInstitutions.map(si => (
-                <div key={si.name} style={{
-                  height: 80,
-                  display: 'flex',
-                  alignItems: 'center',
-                  flex: '1 1 180px',
-                  maxWidth: 280,
-                  padding: '4px 0',
-                }}>
+      {/* ─── SPEAKERS ───────────────────────────────────────── */}
+      <section id="speakers" className="section" style={{ background: 'var(--background)', borderTop: '1px solid var(--border)' }}>
+        <div className="container">
+          <p className="label" style={{ marginBottom: 20 }}>Speakers</p>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: 48, flexWrap: 'wrap', gap: 24 }}>
+            <h2 className="headline" style={{ maxWidth: 520 }}>
+              Across contemplative science, clinical care and emerging technology
+            </h2>
+            <p className="body" style={{ maxWidth: 420 }}>
+              Researchers, clinicians and scholars whose work runs through the conference&rsquo;s six pillars — from classical textual scholarship to AI-driven rehabilitation and biosignal science.
+            </p>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 24 }}>
+            {speakers.map(sp => (
+              <div key={sp.name} className="speaker-card">
+                <div className="speaker-photo-frame">
                   <Image
-                    src={si.logo}
-                    alt={si.alt}
-                    width={260}
-                    height={72}
-                    style={{ width: 'auto', height: '100%', maxWidth: '100%', objectFit: 'contain', objectPosition: 'left center' }}
+                    src={sp.photo}
+                    alt={sp.name}
+                    fill
+                    sizes="(max-width: 768px) 90vw, 280px"
+                    className="speaker-photo"
                     unoptimized
                   />
                 </div>
-              ))}
-            </div>
+                <h3 style={{ fontSize: 16, fontWeight: 700, color: 'var(--foreground)', marginBottom: 6, letterSpacing: '-0.01em' }}>{sp.name}</h3>
+                <p style={{ fontSize: 12.5, color: 'var(--muted-light)', lineHeight: 1.5, marginBottom: sp.subrole ? 4 : 10 }}>{sp.title}</p>
+                {sp.subrole && <p style={{ fontSize: 11, color: 'var(--muted)', lineHeight: 1.4, marginBottom: 10, letterSpacing: '0.01em' }}>{sp.subrole}</p>}
+                <p style={{ fontSize: 12, fontWeight: 600, marginBottom: 14 }}>
+                  {sp.affiliationUrl ? (
+                    <a href={sp.affiliationUrl} target="_blank" rel="noopener noreferrer" className="speaker-link">{sp.affiliation}</a>
+                  ) : (
+                    <span style={{ color: 'var(--muted)' }}>{sp.affiliation}</span>
+                  )}
+                  <span style={{ color: 'var(--border-mid)', margin: '0 8px' }}>·</span>
+                  <a href={sp.profileUrl} target="_blank" rel="noopener noreferrer" className="speaker-link">Profile</a>
+                </p>
+                <p style={{ fontSize: 13, color: 'var(--muted-light)', lineHeight: 1.65 }}>{sp.bio}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -411,11 +696,11 @@ export default function Home() {
           <p className="label" style={{ marginBottom: 20 }}>Featured at MBDHC 2026</p>
           <h2 className="headline" style={{ marginBottom: 48 }}>Book Launches</h2>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(420px, 1fr))', gap: 24 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(380px, 1fr))', gap: 24 }}>
             {[
               {
                 title: 'Meta-Meditation for Mental Health Routage',
-                author: 'Steve Haberlin',
+                author: 'Dr. Steve Haberlin',
                 note: 'Day 1 Launch — October 22, 2026',
                 cover: '/images/Meta-MeditationforMentalHealth.png',
               },
@@ -424,6 +709,12 @@ export default function Home() {
                 author: 'Satyam Tiwari',
                 note: 'Day 1 Launch — October 22, 2026',
                 cover: '/images/sutratosensorbookcover.png',
+              },
+              {
+                title: 'Applying Therapeutic Yoga in Integrative Health: A Guide for Re-Imagining Well-Being',
+                author: 'Prof. Amy Wheeler-Mantoan & Marlysa Sullivan',
+                note: 'Day 2 Launch — October 23, 2026',
+                cover: '/images/amybookimage.jpg',
               },
             ].map(book => (
               <div key={book.title} className="card" style={{ padding: '28px 32px', display: 'flex', gap: 28, alignItems: 'flex-start' }}>
@@ -450,45 +741,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ─── PARTNERS ───────────────────────────────────────── */}
-      <section id="partners" className="section" style={{ background: 'var(--surface)', borderTop: '1px solid var(--border)', borderBottom: '1px solid var(--border)' }}>
-        <div className="container">
-          <p className="label" style={{ marginBottom: 20 }}>Organisers &amp; Collaboration</p>
-          <h2 className="headline" style={{ marginBottom: 48 }}>Organisers &amp; collaborators</h2>
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 24 }}>
-            {[
-              {
-                name: 'YogaXBiofeedback Pvt Ltd',
-                also: 'Dhyanly',
-                desc: 'AI-powered software and hardware for mind-body and biofeedback sciences. Developer of wearable biosignal platforms and digital health tools for contemplative practice.',
-                role: 'Primary Organiser',
-                logo: '/images/dhyanlylogo.jpg',
-                logoAlt: 'Dhyanly',
-              },
-              {
-                name: 'The India Center',
-                also: 'University of Central Florida',
-                desc: 'UCF\'s dedicated centre for India-focused research, education and cultural engagement — the convening academic home for MBDHC 2026.',
-                role: 'Convening Institution',
-                logo: '/images/ucf.jpg',
-                logoAlt: 'University of Central Florida',
-              },
-            ].map(p => (
-              <div key={p.name} className="card" style={{ padding: '32px 36px' }}>
-                <div style={{ marginBottom: 24, height: 80, display: 'flex', alignItems: 'center' }}>
-                  <Image src={p.logo} alt={p.logoAlt} width={240} height={76} style={{ width: 'auto', height: '100%', maxWidth: '100%', objectFit: 'contain', objectPosition: 'left center' }} unoptimized />
-                </div>
-                <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--teal)', marginBottom: 14 }}>{p.role}</p>
-                <h3 style={{ fontSize: 16, fontWeight: 750, color: 'var(--foreground)', marginBottom: 4, letterSpacing: '-0.01em' }}>{p.name}</h3>
-                <p style={{ fontSize: 12, color: 'var(--muted)', marginBottom: 16 }}>{p.also}</p>
-                <p style={{ fontSize: 13, color: 'var(--muted-light)', lineHeight: 1.65 }}>{p.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ─── FINAL CTA ──────────────────────────────────────── */}
       <section className="section-lg" style={{ background: 'var(--background)' }}>
         <div className="container" style={{ textAlign: 'center' }}>
@@ -497,13 +749,13 @@ export default function Home() {
             Be part of a conversation<br />that is long overdue.
           </h2>
           <p className="body-lg" style={{ maxWidth: 520, margin: '0 auto 48px' }}>
-            Registration is free. Join neuroscientists, yoga therapists, AI researchers, clinicians and technologists from across six institutions and multiple countries.
+            Registration is free. Join neuroscientists, yoga therapists, AI researchers, clinicians and technologists from across seven institutions and multiple countries.
           </p>
           <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
             <Link href="/register" className="btn btn-teal" style={{ padding: '14px 36px', fontSize: 15 }}>Register — Free</Link>
             <Link href="/schedule" className="btn btn-outline" style={{ padding: '14px 36px', fontSize: 15 }}>View Programme</Link>
           </div>
-          <p className="caption" style={{ marginTop: 24 }}>Online · 18:30–22:30 IST · Free registration · No ticket required</p>
+          <p className="caption" style={{ marginTop: 24 }}>Hybrid — In-person at IIT Delhi, New Delhi &nbsp;·&nbsp; Online worldwide &nbsp;·&nbsp; 18:30–22:30 IST &nbsp;·&nbsp; Free to attend</p>
         </div>
       </section>
     </>

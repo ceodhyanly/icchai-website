@@ -76,7 +76,7 @@ export default function SchedulePage() {
           <p className="label" style={{ marginBottom: 20 }}>Programme</p>
           <h1 className="display" style={{ marginBottom: 20 }}>Conference Schedule</h1>
           <p className="body-lg" style={{ maxWidth: 560, marginBottom: 32 }}>
-            October 22–23, 2026 &nbsp;·&nbsp; Online &nbsp;·&nbsp; Four hours per day across all time zones
+            October 22–23, 2026 &nbsp;·&nbsp; Hybrid — In-person at IIT Delhi & Online Worldwide &nbsp;·&nbsp; Four hours per day across all time zones
           </p>
           <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
             <span className="chip chip-teal">18:30 IST</span>

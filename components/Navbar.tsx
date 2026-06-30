@@ -4,11 +4,12 @@ import Link from 'next/link'
 import { useState, useEffect } from 'react'
 
 const links = [
+  { href: '/#partners', label: 'Partners' },
   { href: '/#about', label: 'About' },
   { href: '/#pillars', label: 'Pillars' },
   { href: '/schedule', label: 'Schedule' },
-  { href: '/#institutions', label: 'Institutions' },
-  { href: '/#partners', label: 'Partners' },
+  { href: '/#organizers', label: 'Team' },
+  { href: '/#speakers', label: 'Speakers' },
 ]
 
 export default function Navbar() {
@@ -58,7 +59,7 @@ export default function Navbar() {
             textTransform: 'uppercase', color: wordmarkSub, lineHeight: 1,
             transition: 'color 0.35s',
           }}>
-            Mind-Body &amp; Digital Health
+            Mind-Body, AI &amp; Digital Health
           </span>
         </Link>
 

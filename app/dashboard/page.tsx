@@ -39,7 +39,7 @@ export default async function DashboardPage() {
           <div>
             <p style={{ fontWeight: 700, fontSize: 16, marginBottom: 6 }}>Registration confirmed — MBDHC 2026</p>
             <p className="body" style={{ fontSize: 14, marginBottom: 16 }}>
-              October 22–23, 2026 &nbsp;·&nbsp; Online &nbsp;·&nbsp; 18:30–22:30 IST / 9:00 am–1:00 pm EST
+              October 22–23, 2026 &nbsp;·&nbsp; Hybrid — IIT Delhi & Online &nbsp;·&nbsp; 18:30–22:30 IST / 9:00 am–1:00 pm EST
             </p>
             <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
               <span className="chip chip-teal" style={{ fontSize: 11 }}>Registered</span>
@@ -107,7 +107,7 @@ export default async function DashboardPage() {
           <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--muted)', marginBottom: 24 }}>Conference Details</p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: 24 }}>
             {[
-              { label: 'Format', value: 'Online (link TBA)' },
+              { label: 'Format', value: 'Hybrid — IIT Delhi + Online' },
               { label: 'Dates', value: 'October 22–23, 2026' },
               { label: 'Time (IST)', value: '18:30–22:30' },
               { label: 'Time (EST)', value: '9:00 am–1:00 pm' },

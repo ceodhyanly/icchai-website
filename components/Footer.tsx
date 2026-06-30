@@ -3,7 +3,7 @@
 import Link from 'next/link'
 
 const nav = [
-  { heading: 'Conference', links: [['/#about','About'], ['/#pillars','Pillars'], ['/schedule','Schedule'], ['/#institutions','Institutions'], ['/#partners','Partners']] },
+  { heading: 'Conference', links: [['/#partners','Partners'], ['/#about','About'], ['/#pillars','Pillars'], ['/schedule','Schedule'], ['/#speakers','Speakers']] },
   { heading: 'Attend', links: [['/register','Register'], ['/login','Sign In'], ['/schedule','Full Programme']] },
   { heading: 'Organised By', links: [['#','YogaXBiofeedback Pvt Ltd (Dhyanly)'], ['#','The India Center, UCF'], ['#','NDMU School of Integrative Health']] },
 ]
@@ -20,15 +20,16 @@ export default function Footer() {
                 MBDHC <span style={{ color: '#A41C30' }}>2026</span>
               </div>
               <div style={{ fontSize: 9.5, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(228,220,212,0.38)' }}>
-                Mind-Body &amp; Digital Health
+                Mind-Body, AI &amp; Digital Health
               </div>
             </div>
             <p style={{ fontSize: 12, lineHeight: 1.7, color: 'rgba(228,220,212,0.50)', marginBottom: 20, maxWidth: 280 }}>
-              Mind-Body &amp; Digital Health Conference — International Conference on AI, Yoga, Meditation and Mindfulness in the Digital Age.
+              Mind-Body, AI &amp; Digital Health Conference — International Conference on AI, Yoga, Meditation and Mindfulness in the Digital Age.
             </p>
             <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
               <span style={{ display: 'inline-flex', alignItems: 'center', padding: '4px 12px', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.10)', borderRadius: 3, fontSize: 11, fontWeight: 500, color: 'rgba(228,220,212,0.55)', letterSpacing: '0.02em' }}>Oct 22–23, 2026</span>
-              <span style={{ display: 'inline-flex', alignItems: 'center', padding: '4px 12px', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.10)', borderRadius: 3, fontSize: 11, fontWeight: 500, color: 'rgba(228,220,212,0.55)', letterSpacing: '0.02em' }}>Online</span>
+              <span style={{ display: 'inline-flex', alignItems: 'center', padding: '4px 12px', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.10)', borderRadius: 3, fontSize: 11, fontWeight: 500, color: 'rgba(228,220,212,0.55)', letterSpacing: '0.02em' }}>Hybrid</span>
+              <span style={{ display: 'inline-flex', alignItems: 'center', padding: '4px 12px', background: 'rgba(198,146,50,0.10)', border: '1px solid rgba(198,146,50,0.25)', borderRadius: 3, fontSize: 11, fontWeight: 500, color: 'rgba(198,146,50,0.80)', letterSpacing: '0.02em' }}>IIT Delhi + Online</span>
             </div>
           </div>
 
