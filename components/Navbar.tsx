@@ -52,14 +52,14 @@ export default function Navbar() {
             color: wordmarkPrimary, lineHeight: 1,
             transition: 'color 0.35s',
           }}>
-            MBDHC <span style={{ color: wordmarkAccent }}>2026</span>
+            ICCHAI <span style={{ color: wordmarkAccent }}>2026</span>
           </span>
           <span style={{
             fontSize: 9.5, fontWeight: 500, letterSpacing: '0.1em',
             textTransform: 'uppercase', color: wordmarkSub, lineHeight: 1,
             transition: 'color 0.35s',
           }}>
-            Mind-Body, AI &amp; Digital Health
+            Contemplative HealthTech and AI
           </span>
         </Link>
 

@@ -37,7 +37,7 @@ export async function POST(req: NextRequest) {
       message: 'Registration successful',
       user: { id: user.id, email: user.email, firstName: user.firstName, lastName: user.lastName },
     })
-    response.cookies.set('mbdhc_token', token, {
+    response.cookies.set('icchai_token', token, {
       httpOnly: true,
       secure: process.env.NODE_ENV === 'production',
       sameSite: 'lax',

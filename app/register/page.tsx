@@ -67,7 +67,7 @@ export default function RegisterPage() {
         <div style={{ marginBottom: 48 }}>
           <p className="label" style={{ marginBottom: 16 }}>Free Registration</p>
           <h1 style={{ fontSize: 'clamp(28px, 4vw, 40px)', fontWeight: 800, letterSpacing: '-0.03em', marginBottom: 8 }}>
-            Register for MBDHC 2026
+            Register for ICCHAI 2026
           </h1>
           <p className="body">October 22–23, 2026 · Hybrid — In-person at IIT Delhi, New Delhi & Online Worldwide · Free to attend</p>
         </div>

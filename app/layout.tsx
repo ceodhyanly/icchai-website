@@ -8,25 +8,25 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair', weight: ['400', '500', '600', '700', '800'] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://mbdhc2026.org'),
+  metadataBase: new URL('https://icchai2026.org'),
   icons: {
     icon: '/images/emoticonimg.png',
     shortcut: '/images/emoticonimg.png',
     apple: '/images/emoticonimg.png',
   },
-  title: 'MBDHC 2026 — Mind-Body, AI & Digital Health Conference',
-  description: 'International Conference on AI, Yoga, Meditation and Mindfulness in the Digital Age. October 22–23, 2026 | Hybrid — In-person at IIT Delhi & Online Worldwide',
-  keywords: 'yoga, meditation, mindfulness, AI, digital health, neuroscience, biofeedback, HRV, contemplative science',
+  title: 'ICCHAI 2026 — International Conference on Contemplative HealthTech and AI',
+  description: 'International Conference on Contemplative HealthTech and AI. October 22–23, 2026 | Hybrid — In-person at IIT Delhi & Online Worldwide',
+  keywords: 'yoga, meditation, mindfulness, AI, contemplative healthtech, neuroscience, biofeedback, HRV, contemplative science',
   openGraph: {
-    title: 'MBDHC 2026 — Mind-Body, AI & Digital Health Conference',
-    description: 'International Conference on AI, Yoga, Meditation and Mindfulness in the Digital Age.',
+    title: 'ICCHAI 2026 — International Conference on Contemplative HealthTech and AI',
+    description: 'International Conference on Contemplative HealthTech and AI.',
     type: 'website',
-    images: [{ url: '/images/og-image.svg', width: 1200, height: 630, alt: 'MBDHC 2026' }],
+    images: [{ url: '/images/og-image.svg', width: 1200, height: 630, alt: 'ICCHAI 2026' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'MBDHC 2026 — Mind-Body, AI & Digital Health Conference',
-    description: 'International Conference on AI, Yoga, Meditation and Mindfulness in the Digital Age.',
+    title: 'ICCHAI 2026 — International Conference on Contemplative HealthTech and AI',
+    description: 'International Conference on Contemplative HealthTech and AI.',
     images: ['/images/og-image.svg'],
   },
 }

@@ -106,7 +106,7 @@ const mainPartners = [
     name: 'University of Central Florida',
     dept: 'The India Center',
     role: 'Convening Institution',
-    desc: "UCF's dedicated centre for India-focused research, education and cultural engagement — the convening academic home for MBDHC 2026.",
+    desc: "UCF's dedicated centre for India-focused research, education and cultural engagement — the convening academic home for ICCHAI 2026.",
     logo: '/images/ucf.jpg',
     logoAlt: 'University of Central Florida',
   },
@@ -122,7 +122,7 @@ const mainPartners = [
     name: 'IIT Delhi',
     dept: 'National Resource Centre for Value Education in Engineering (NRCVEE)',
     role: 'Conference Venue · Institutional Partner',
-    desc: 'New Delhi, India — the in-person venue for MBDHC 2026. The NRCVEE integrates ethics and value education into engineering curricula across India.',
+    desc: 'New Delhi, India — the in-person venue for ICCHAI 2026. The NRCVEE integrates ethics and value education into engineering curricula across India.',
     logo: '/images/iidelhilogo.jpg',
     logoAlt: 'National Resource Centre for Value Education in Engineering, IIT Delhi',
   },
@@ -148,7 +148,7 @@ const speakerInstitutions = [
 const organizers = [
   {
     name: 'Satyam Tiwari',
-    role: 'Convener, MBDHC 2026',
+    role: 'Convener, ICCHAI 2026',
     subrole: 'Head of Program, Technology & Production',
     affiliation: 'IIT Mandi · Founder, YogaXBiofeedback Pvt Ltd (Dhyanly)',
     photo: '/organizers/satyam-tiwari.jpg',
@@ -156,7 +156,7 @@ const organizers = [
   },
   {
     name: 'Dr. Steve Haberlin',
-    role: 'Co-Convener, MBDHC 2026',
+    role: 'Co-Convener, ICCHAI 2026',
     subrole: 'Head of Global Outreach',
     affiliation: 'University of Central Florida',
     photo: '/organizers/steve-haberlin.jpg',
@@ -312,12 +312,12 @@ export default function Home() {
 
           {/* Title — explicit white */}
           <h1 className="display" style={{ color: '#FFFFFF', maxWidth: 880, marginBottom: 32 }}>
-            Mind-Body, AI &amp;<br />Digital Health<br />
-            <span style={{ color: '#C69232' }}>Conference</span>
+            International Conference on<br />Contemplative HealthTech<br />
+            <span style={{ color: '#C69232' }}>and AI</span>
           </h1>
 
           <p style={{ fontSize: 18, lineHeight: 1.75, color: 'rgba(228,232,241,0.75)', maxWidth: 600, marginBottom: 16 }}>
-            International Conference on AI, Yoga, Meditation and Mindfulness in the Digital Age — the first sustained dialogue between ancient contemplative science and modern technology.
+            International Conference on Contemplative HealthTech and AI — the first sustained dialogue between ancient contemplative science and modern technology.
           </p>
           <p style={{ fontSize: 13, color: 'rgba(228,232,241,0.6)', marginBottom: 8, letterSpacing: '0.01em' }}>
             <span style={{ color: '#C69232', fontWeight: 600 }}>In-person venue:</span> IIT Delhi, New Delhi, India &nbsp;·&nbsp; Presenters and attendees welcome to join on-site
@@ -350,7 +350,7 @@ export default function Home() {
               Convened with leading institutions
             </h2>
             <p className="body" style={{ maxWidth: 380 }}>
-              MBDHC 2026 is organised and academically anchored by partners spanning India and the United States.
+              ICCHAI 2026 is organised and academically anchored by partners spanning India and the United States.
             </p>
           </div>
 
@@ -454,12 +454,12 @@ export default function Home() {
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 80, alignItems: 'start' }}>
             <div>
-              <p className="label" style={{ marginBottom: 20 }}>About MBDHC 2026</p>
+              <p className="label" style={{ marginBottom: 20 }}>About ICCHAI 2026</p>
               <h2 className="headline" style={{ marginBottom: 28 }}>
                 Three worlds.<br />One conversation.
               </h2>
               <p className="body" style={{ marginBottom: 20 }}>
-                MBDHC 2026 is the inaugural edition of what is intended to become an annual gathering — a space where Indian Knowledge Systems and Western empirical science meet as equal partners in inquiry.
+                ICCHAI 2026 is the inaugural edition of what is intended to become an annual gathering — a space where Indian Knowledge Systems and Western empirical science meet as equal partners in inquiry.
               </p>
               <p className="body" style={{ marginBottom: 20 }}>
                 Not as tradition waiting to be validated by science, or science imposing itself on tradition. Yoga, meditation and mindfulness carry centuries of lived, experiential knowledge about regulating the breath, the nervous system, and the mind.
@@ -604,7 +604,7 @@ export default function Home() {
           <p className="label" style={{ marginBottom: 20 }}>Organizing Committee</p>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: 56, flexWrap: 'wrap', gap: 24 }}>
             <h2 className="headline" style={{ maxWidth: 480 }}>
-              The team behind MBDHC 2026
+              The team behind ICCHAI 2026
             </h2>
             <p className="body" style={{ maxWidth: 380 }}>
               Scholars, practitioners and technologists who have convened this conference and are responsible for its programme, partnerships and global reach.
@@ -693,7 +693,7 @@ export default function Home() {
       {/* ─── BOOK LAUNCHES ──────────────────────────────────── */}
       <section className="section" style={{ background: 'var(--background)', borderTop: '1px solid var(--border)' }}>
         <div className="container">
-          <p className="label" style={{ marginBottom: 20 }}>Featured at MBDHC 2026</p>
+          <p className="label" style={{ marginBottom: 20 }}>Featured at ICCHAI 2026</p>
           <h2 className="headline" style={{ marginBottom: 48 }}>Book Launches</h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(380px, 1fr))', gap: 24 }}>

@@ -17,14 +17,14 @@ export default function Footer() {
           <div>
             <div style={{ marginBottom: 16 }}>
               <div style={{ fontSize: 18, fontWeight: 800, letterSpacing: '-0.02em', color: '#FFFFFF', marginBottom: 3 }}>
-                MBDHC <span style={{ color: '#A41C30' }}>2026</span>
+                ICCHAI <span style={{ color: '#A41C30' }}>2026</span>
               </div>
               <div style={{ fontSize: 9.5, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(228,220,212,0.38)' }}>
-                Mind-Body, AI &amp; Digital Health
+                Contemplative HealthTech and AI
               </div>
             </div>
             <p style={{ fontSize: 12, lineHeight: 1.7, color: 'rgba(228,220,212,0.50)', marginBottom: 20, maxWidth: 280 }}>
-              Mind-Body, AI &amp; Digital Health Conference — International Conference on AI, Yoga, Meditation and Mindfulness in the Digital Age.
+              International Conference on Contemplative HealthTech and AI — the first sustained dialogue between ancient contemplative science and modern technology.
             </p>
             <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
               <span style={{ display: 'inline-flex', alignItems: 'center', padding: '4px 12px', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.10)', borderRadius: 3, fontSize: 11, fontWeight: 500, color: 'rgba(228,220,212,0.55)', letterSpacing: '0.02em' }}>Oct 22–23, 2026</span>
@@ -51,7 +51,7 @@ export default function Footer() {
         <div style={{ height: 1, background: 'rgba(255,255,255,0.10)', marginBottom: 28 }} />
 
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 16, paddingBottom: 32 }}>
-          <p style={{ fontSize: 12, color: 'rgba(228,220,212,0.35)' }}>&copy; 2026 MBDHC. Organised by YogaXBiofeedback Pvt Ltd (Dhyanly).</p>
+          <p style={{ fontSize: 12, color: 'rgba(228,220,212,0.35)' }}>&copy; 2026 ICCHAI. Organised by YogaXBiofeedback Pvt Ltd (Dhyanly).</p>
           <p style={{ fontSize: 12, color: 'rgba(228,220,212,0.35)' }}>18:30–22:30 IST &nbsp;·&nbsp; 9:00 am–1:00 pm EST &nbsp;·&nbsp; 3:00–7:00 pm CET</p>
         </div>
       </div>
