@@ -49,7 +49,7 @@ export default function PrivacyPage() {
             </Block>
 
             <Block title="Your rights">
-              You have the right to access, correct, or delete your personal data at any time. To make a request, contact us at info@icchai.com. We will respond within 30 days.
+              You have the right to access, correct, or delete your personal data at any time. To make a request, contact us at ceodhyanly@gmail.com. We will respond within 30 days.
             </Block>
 
             <Block title="Retention">
@@ -57,7 +57,7 @@ export default function PrivacyPage() {
             </Block>
 
             <Block title="Contact">
-              For any privacy-related questions, write to us at <a href="mailto:info@icchai.com" style={{ color: 'var(--teal)', textDecoration: 'none' }}>info@icchai.com</a>.
+              For any privacy-related questions, write to us at <a href="mailto:ceodhyanly@gmail.com" style={{ color: 'var(--teal)', textDecoration: 'none' }}>ceodhyanly@gmail.com</a>.
             </Block>
 
           </div>

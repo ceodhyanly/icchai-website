@@ -32,7 +32,7 @@ export default function Footer() {
               <span style={{ display: 'inline-flex', alignItems: 'center', padding: '4px 12px', background: 'rgba(198,146,50,0.10)', border: '1px solid rgba(198,146,50,0.25)', borderRadius: 3, fontSize: 11, fontWeight: 500, color: 'rgba(198,146,50,0.80)', letterSpacing: '0.02em' }}>IIT Delhi + Online</span>
             </div>
             <p style={{ fontSize: 12, color: 'rgba(228,220,212,0.40)', lineHeight: 1.6 }}>
-              Contact: <a href="mailto:info@icchai.com" style={{ color: 'rgba(198,146,50,0.70)', textDecoration: 'none' }}>info@icchai.com</a>
+              Contact: <a href="mailto:ceodhyanly@gmail.com" style={{ color: 'rgba(198,146,50,0.70)', textDecoration: 'none' }}>ceodhyanly@gmail.com</a>
             </p>
           </div>
 

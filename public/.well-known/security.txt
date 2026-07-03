@@ -1,4 +1,4 @@
-Contact: mailto:info@icchai.com
+Contact: mailto:ceodhyanly@gmail.com
 Expires: 2027-12-31T23:59:59.000Z
 Preferred-Languages: en
 Canonical: https://icchai.com/.well-known/security.txt
@@ -6,7 +6,7 @@ Policy: https://icchai.com/privacy
 Acknowledgments: https://icchai.com
 
 # ICCHAI 2026 — International Conference on Contemplative HealthTech and AI
-# To report a security vulnerability, please email info@icchai.com with:
+# To report a security vulnerability, please email ceodhyanly@gmail.com with:
 # - A description of the vulnerability
 # - Steps to reproduce
 # - Potential impact

@@ -138,7 +138,7 @@ const jsonLd = {
       logo: 'https://icchai.com/images/emoticonimg.png',
       contactPoint: {
         '@type': 'ContactPoint',
-        email: 'info@icchai.com',
+        email: 'ceodhyanly@gmail.com',
         contactType: 'Conference Enquiries',
       },
       sameAs: [],

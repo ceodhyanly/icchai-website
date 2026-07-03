@@ -65,7 +65,7 @@ export default function CookiesPage() {
             </Block>
 
             <Block title="Contact">
-              Cookie questions can be sent to <a href="mailto:info@icchai.com" style={{ color: 'var(--teal)', textDecoration: 'none' }}>info@icchai.com</a>.
+              Cookie questions can be sent to <a href="mailto:ceodhyanly@gmail.com" style={{ color: 'var(--teal)', textDecoration: 'none' }}>ceodhyanly@gmail.com</a>.
             </Block>
 
           </div>
