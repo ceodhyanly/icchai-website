@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
 
 const roles = [
   'Researcher / Academic', 'Clinician / Therapist', 'Technology / Industry',
@@ -25,10 +24,10 @@ const attendance = [
 const stepLabels = ['Personal Info', 'Background', 'Preferences']
 
 export default function RegisterPage() {
-  const router = useRouter()
   const [step, setStep] = useState(1)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
+  const [success, setSuccess] = useState<{ name: string; regNumber: string } | null>(null)
   const [form, setForm] = useState({
     firstName: '', lastName: '', email: '', password: '', confirmPassword: '',
     institution: '', country: '', role: '', interests: [] as string[], attendance: 'both',
@@ -40,7 +39,7 @@ export default function RegisterPage() {
 
   const next = (requiredFields: (keyof typeof form)[]) => {
     for (const f of requiredFields) {
-      if (!form[f]) { setError(`Please fill in all required fields`); return }
+      if (!form[f]) { setError('Please fill in all required fields'); return }
     }
     setError(''); setStep(s => s + 1)
   }
@@ -57,13 +56,61 @@ export default function RegisterPage() {
     const data = await res.json()
     setLoading(false)
     if (!res.ok) { setError(data.error ?? 'Registration failed'); return }
-    router.push('/dashboard')
+    setSuccess({ name: form.firstName, regNumber: data.registrationNumber })
+  }
+
+  if (success) {
+    return (
+      <div style={{ minHeight: '100vh', background: 'var(--background)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '100px 24px 80px' }}>
+        <div style={{ width: '100%', maxWidth: 560, textAlign: 'center' }}>
+          {/* Check circle */}
+          <div style={{ width: 72, height: 72, borderRadius: '50%', background: 'rgba(0,184,181,0.10)', border: '2px solid var(--teal-border)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 28px', fontSize: 30 }}>
+            ✓
+          </div>
+
+          <p className="label" style={{ marginBottom: 12 }}>You are registered</p>
+          <h1 style={{ fontSize: 'clamp(26px, 4vw, 36px)', fontWeight: 800, letterSpacing: '-0.03em', marginBottom: 12 }}>
+            Welcome, {success.name}!
+          </h1>
+          <p className="body" style={{ marginBottom: 40 }}>
+            Your seat at ICCHAI 2026 is confirmed. A confirmation email with your registration pass has been sent to your inbox.
+          </p>
+
+          {/* Registration number box */}
+          <div style={{ padding: '28px 32px', background: 'var(--surface)', border: '1px solid var(--border)', borderTop: '3px solid var(--teal)', borderRadius: 8, marginBottom: 28, textAlign: 'left' }}>
+            <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--muted)', marginBottom: 10 }}>
+              Your Registration Number
+            </p>
+            <p style={{ fontSize: 28, fontWeight: 900, color: 'var(--teal)', letterSpacing: '0.02em', marginBottom: 0, fontFamily: 'monospace' }}>
+              {success.regNumber}
+            </p>
+          </div>
+
+          {/* Download button */}
+          <a
+            href={`/api/slip/${success.regNumber}`}
+            download
+            className="btn btn-teal"
+            style={{ display: 'flex', justifyContent: 'center', marginBottom: 12, padding: '14px 28px', fontSize: 15, fontWeight: 700 }}
+          >
+            Download Your Registration Pass (PDF)
+          </a>
+
+          <Link href="/dashboard" className="btn btn-outline" style={{ display: 'flex', justifyContent: 'center', marginBottom: 40, padding: '14px 28px' }}>
+            Go to My Dashboard
+          </Link>
+
+          <div style={{ padding: '20px 24px', background: 'var(--surface-3)', borderRadius: 6, fontSize: 13, color: 'var(--muted-light)', lineHeight: 1.7 }}>
+            October 22–23, 2026 &nbsp;·&nbsp; IIT Delhi, New Delhi &amp; Online &nbsp;·&nbsp; 18:30–22:30 IST
+          </div>
+        </div>
+      </div>
+    )
   }
 
   return (
     <div style={{ minHeight: '100vh', background: 'var(--background)', paddingTop: 68, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '100px 24px 80px' }}>
       <div style={{ width: '100%', maxWidth: 600 }}>
-        {/* Header */}
         <div style={{ marginBottom: 48 }}>
           <p className="label" style={{ marginBottom: 16 }}>Free Registration</p>
           <h1 style={{ fontSize: 'clamp(28px, 4vw, 40px)', fontWeight: 800, letterSpacing: '-0.03em', marginBottom: 8 }}>
@@ -83,7 +130,6 @@ export default function RegisterPage() {
           ))}
         </div>
 
-        {/* Error */}
         {error && (
           <div style={{ padding: '12px 16px', background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.25)', borderRadius: 6, fontSize: 14, color: '#FCA5A5', marginBottom: 24 }}>
             {error}
@@ -97,9 +143,9 @@ export default function RegisterPage() {
               <Field label="Last Name *"><input className="field-input" placeholder="Smith" value={form.lastName} onChange={e => set('lastName', e.target.value)} /></Field>
             </div>
             <Field label="Email Address *"><input className="field-input" type="email" placeholder="jane@example.com" value={form.email} onChange={e => set('email', e.target.value)} /></Field>
-            <Field label="Password *"><input className="field-input" type="password" placeholder="Minimum 8 characters" value={form.password} onChange={e => set('password', e.target.value)} /></Field>
+            <Field label="Password *"><input className="field-input" type="password" placeholder="Min 8 chars, uppercase, lowercase, number" value={form.password} onChange={e => set('password', e.target.value)} /></Field>
             <Field label="Confirm Password *"><input className="field-input" type="password" placeholder="Repeat your password" value={form.confirmPassword} onChange={e => set('confirmPassword', e.target.value)} /></Field>
-            <button className="btn btn-teal" style={{ width: '100%', justifyContent: 'center', marginTop: 8 }} onClick={() => next(['firstName','lastName','email','password'])}>
+            <button className="btn btn-teal" style={{ width: '100%', justifyContent: 'center', marginTop: 8 }} onClick={() => next(['firstName', 'lastName', 'email', 'password'])}>
               Continue
             </button>
           </div>
@@ -128,7 +174,6 @@ export default function RegisterPage() {
 
         {step === 3 && (
           <div style={{ display: 'flex', flexDirection: 'column', gap: 28 }}>
-            {/* Attendance */}
             <div>
               <label className="field-label" style={{ marginBottom: 12 }}>Attendance</label>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
@@ -144,7 +189,6 @@ export default function RegisterPage() {
               </div>
             </div>
 
-            {/* Interests */}
             <div>
               <label className="field-label" style={{ marginBottom: 12 }}>Areas of Interest</label>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>

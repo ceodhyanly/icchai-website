@@ -10,7 +10,7 @@ export default async function DashboardPage() {
 
   const user = await prisma.user.findUnique({
     where: { id: session.userId },
-    select: { id: true, email: true, firstName: true, lastName: true, institution: true, country: true, role: true, interests: true, attendance: true, createdAt: true },
+    select: { id: true, email: true, firstName: true, lastName: true, institution: true, country: true, role: true, interests: true, attendance: true, registrationNumber: true, createdAt: true },
   })
   if (!user) redirect('/login')
 
@@ -41,10 +41,19 @@ export default async function DashboardPage() {
             <p className="body" style={{ fontSize: 14, marginBottom: 16 }}>
               October 22–23, 2026 &nbsp;·&nbsp; Hybrid, IIT Delhi and Online &nbsp;·&nbsp; 18:30–22:30 IST / 9:00 am–1:00 pm EST
             </p>
-            <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 16 }}>
               <span className="chip chip-teal" style={{ fontSize: 11 }}>Registered</span>
               <span className="chip" style={{ fontSize: 11 }}>{attendanceLabel}</span>
             </div>
+            {user.registrationNumber && (
+              <div style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
+                <span style={{ fontSize: 12, color: 'var(--muted)', fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase' }}>Reg No.</span>
+                <span style={{ fontSize: 15, fontWeight: 800, color: 'var(--teal)', fontFamily: 'monospace' }}>{user.registrationNumber}</span>
+                <a href={`/api/slip/${user.registrationNumber}`} download style={{ fontSize: 12, fontWeight: 700, color: 'var(--teal)', textDecoration: 'none', padding: '6px 14px', border: '1px solid var(--teal-border)', borderRadius: 4 }}>
+                  Download Pass (PDF)
+                </a>
+              </div>
+            )}
           </div>
         </div>
 

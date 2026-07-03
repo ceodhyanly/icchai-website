@@ -16,7 +16,8 @@ model User {
   country     String?
   role        String?
   interests   String?
-  attendance  String   @default("both")
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  attendance         String   @default("both")
+  registrationNumber String?  @unique
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
 }

@@ -3,6 +3,8 @@ import bcrypt from 'bcryptjs'
 import { prisma } from '@/lib/db'
 import { signToken } from '@/lib/auth'
 import { rateLimit } from '@/lib/rateLimit'
+import { generateSlipPDF } from '@/lib/generateSlipPDF'
+import { sendConfirmationEmail } from '@/lib/sendEmail'
 
 function isValidEmail(email: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email) && email.length <= 254
@@ -30,7 +32,6 @@ const ALLOWED_ATTENDANCE = ['both', 'day1', 'day2']
 
 export async function POST(req: NextRequest) {
   try {
-    // Per-IP rate limit: 5 registrations per hour
     const ip = (req.headers.get('x-forwarded-for') ?? '127.0.0.1').split(',')[0].trim()
     const { allowed } = rateLimit(`register:${ip}`, 5, 60 * 60 * 1000)
     if (!allowed) {
@@ -45,30 +46,24 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Invalid request body' }, { status: 400 })
     }
 
-    // Validate and sanitize all inputs
-    const email = sanitizeString(body.email, 254).toLowerCase()
-    const password = typeof body.password === 'string' ? body.password : ''
-    const firstName = sanitizeString(body.firstName, 100)
-    const lastName = sanitizeString(body.lastName, 100)
+    const email      = sanitizeString(body.email, 254).toLowerCase()
+    const password   = typeof body.password === 'string' ? body.password : ''
+    const firstName  = sanitizeString(body.firstName, 100)
+    const lastName   = sanitizeString(body.lastName, 100)
     const institution = sanitizeString(body.institution, 200)
-    const country = sanitizeString(body.country, 100)
-    const role = sanitizeString(body.role, 100)
+    const country    = sanitizeString(body.country, 100)
+    const role       = sanitizeString(body.role, 100)
     const attendance = sanitizeString(body.attendance, 10) || 'both'
 
-    // Validate required fields
     if (!email || !password || !firstName || !lastName) {
       return NextResponse.json({ error: 'First name, last name, email and password are required.' }, { status: 400 })
     }
     if (!isValidEmail(email)) {
       return NextResponse.json({ error: 'Please enter a valid email address.' }, { status: 400 })
     }
-
     const passwordError = validatePassword(password)
-    if (passwordError) {
-      return NextResponse.json({ error: passwordError }, { status: 400 })
-    }
+    if (passwordError) return NextResponse.json({ error: passwordError }, { status: 400 })
 
-    // Validate enumerable fields against allowlists
     if (role && !ALLOWED_ROLES.includes(role)) {
       return NextResponse.json({ error: 'Invalid role selection.' }, { status: 400 })
     }
@@ -76,7 +71,6 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Invalid attendance selection.' }, { status: 400 })
     }
 
-    // Validate interests array
     const rawInterests = body.interests
     let interestsStr: string | null = null
     if (Array.isArray(rawInterests)) {
@@ -89,7 +83,6 @@ export async function POST(req: NextRequest) {
 
     const existing = await prisma.user.findUnique({ where: { email } })
     if (existing) {
-      // Generic message to prevent email enumeration
       return NextResponse.json(
         { error: 'Registration failed. Please check your details and try again.' },
         { status: 409 }
@@ -98,22 +91,34 @@ export async function POST(req: NextRequest) {
 
     const hashed = await bcrypt.hash(password, 12)
     const user = await prisma.user.create({
-      data: {
-        email,
-        password: hashed,
-        firstName,
-        lastName,
-        institution: institution || null,
-        country: country || null,
-        role: role || null,
-        interests: interestsStr,
-        attendance,
-      },
+      data: { email, password: hashed, firstName, lastName,
+        institution: institution || null, country: country || null,
+        role: role || null, interests: interestsStr, attendance },
     })
+
+    // Generate unique registration number from user ID (no race condition)
+    const registrationNumber = `ICCHAI-2026-${1000 + user.id}`
+    await prisma.user.update({ where: { id: user.id }, data: { registrationNumber } })
+
+    // Generate PDF and send email (non-blocking — failure does not break registration)
+    try {
+      const pdfBytes = await generateSlipPDF({
+        firstName: user.firstName, lastName: user.lastName, email: user.email,
+        institution: user.institution, country: user.country, role: user.role,
+        attendance: user.attendance, registrationNumber, createdAt: user.createdAt,
+      })
+      await sendConfirmationEmail(
+        { firstName: user.firstName, email: user.email, registrationNumber, attendance: user.attendance },
+        pdfBytes
+      )
+    } catch {
+      // PDF/email failure is non-fatal
+    }
 
     const token = await signToken({ userId: user.id, email: user.email })
     const response = NextResponse.json({
       message: 'Registration successful',
+      registrationNumber,
       user: { id: user.id, email: user.email, firstName: user.firstName, lastName: user.lastName },
     })
     response.cookies.set('icchai_token', token, {
