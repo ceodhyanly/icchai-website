@@ -89,7 +89,7 @@ const pillars = [
   },
   {
     n: '06', title: 'Ethics, Responsibility & the Future of the Field', Icon: IconBalance,
-    areas: ['Data privacy & ethics in mental health AI', 'Cultural authenticity in technological translation', 'Transparency & safety in AI-mediated tools', 'Encoding contemplative practice into algorithms', 'Policy frameworks — AYUSH, DST, WHO'],
+    areas: ['Data privacy and ethics in mental health AI', 'Cultural authenticity in technological translation', 'Transparency and safety in AI-mediated tools', 'Encoding contemplative practice into algorithms', 'Policy frameworks: AYUSH, DST, WHO'],
   },
 ]
 
@@ -98,7 +98,7 @@ const mainPartners = [
     name: 'YogaXBiofeedback Pvt Ltd',
     dept: 'Dhyanly',
     role: 'Primary Organiser',
-    desc: 'AI-powered software and hardware for mind-body and biofeedback sciences — developer of wearable biosignal platforms and digital health tools for contemplative practice.',
+    desc: 'AI-powered software and hardware for mind-body and biofeedback sciences. Developer of wearable biosignal platforms and digital health tools for contemplative practice.',
     logo: '/images/dhyanlylogo.jpg',
     logoAlt: 'YogaXBiofeedback Pvt Ltd (Dhyanly)',
   },
@@ -106,7 +106,7 @@ const mainPartners = [
     name: 'University of Central Florida',
     dept: 'The India Center',
     role: 'Convening Institution',
-    desc: "UCF's dedicated centre for India-focused research, education and cultural engagement — the convening academic home for ICCHAI 2026.",
+    desc: "UCF's dedicated centre for India-focused research, education and cultural engagement. Convening academic home for ICCHAI 2026.",
     logo: '/images/ucf.jpg',
     logoAlt: 'University of Central Florida',
   },
@@ -114,7 +114,7 @@ const mainPartners = [
     name: 'Notre Dame of Maryland University',
     dept: 'School of Integrative Health (SOIH)',
     role: 'Institutional Partner',
-    desc: 'Baltimore, MD — graduate home of accredited yoga therapy and integrative health programs within a liberal-arts tradition.',
+    desc: 'Baltimore, MD. Graduate home of accredited yoga therapy and integrative health programs within a liberal-arts tradition.',
     logo: '/images/ndmulogo.jpg',
     logoAlt: 'Notre Dame of Maryland University',
   },
@@ -122,7 +122,7 @@ const mainPartners = [
     name: 'IIT Delhi',
     dept: 'National Resource Centre for Value Education in Engineering (NRCVEE)',
     role: 'Conference Venue · Institutional Partner',
-    desc: 'New Delhi, India — the in-person venue for ICCHAI 2026. The NRCVEE integrates ethics and value education into engineering curricula across India.',
+    desc: 'New Delhi, India. In-person venue for ICCHAI 2026. The NRCVEE integrates ethics and value education into engineering curricula across India.',
     logo: '/images/iidelhilogo.jpg',
     logoAlt: 'National Resource Centre for Value Education in Engineering, IIT Delhi',
   },
@@ -130,7 +130,7 @@ const mainPartners = [
 
 const partnershipInProgress = {
   name: 'Loyola Marymount University',
-  dept: 'Bellarmine College of Liberal Arts — MA in Yoga Studies',
+  dept: 'Bellarmine College of Liberal Arts, MA in Yoga Studies',
   logo: '/images/lmulogo.webp',
   logoAlt: 'Loyola Marymount University',
 }
@@ -188,7 +188,7 @@ const speakers = [
     affiliationUrl: '',
     profileUrl: 'https://ie.linkedin.com/in/akhilesh-mishra-002456b6',
     photo: '/speakers/akhilesh-mishra.jpeg',
-    bio: "Three decades of senior diplomacy followed by independent study of Sanskrit philosophical texts — his close reading of the Yoga Sutra and Upanishads situates India's contemplative heritage at the centre of a living intellectual tradition.",
+    bio: "Three decades of senior diplomacy followed by independent study of Sanskrit philosophical texts. His close reading of the Yoga Sutra and Upanishads situates India's contemplative heritage at the centre of a living intellectual tradition.",
   },
   {
     name: 'Prof. Christopher Key Chapple',
@@ -206,7 +206,7 @@ const speakers = [
     affiliationUrl: 'https://www.ucf.edu',
     profileUrl: 'https://ccie.ucf.edu/person/steve-haberlin/',
     photo: '/speakers/steve-haberlin.jpg',
-    bio: 'Investigates how meditation and mindfulness integrate with emerging educational technology in structured academic settings — author of Meditation in the College Classroom and Meta-Meditation.',
+    bio: 'Investigates how meditation and mindfulness integrate with emerging educational technology in structured academic settings. He is the author of Meditation in the College Classroom and Meta-Meditation.',
   },
   {
     name: 'Prof. Amy Wheeler-Mantoan',
@@ -243,7 +243,7 @@ const speakers = [
     affiliationUrl: 'https://www.utah.edu',
     profileUrl: 'https://health.utah.edu/staff/amit-sethi',
     photo: '/speakers/amit-sethi.jpg',
-    bio: 'Directs the NERD Lab at the University of Utah — applying transcranial brain stimulation and movement science to develop evidence-based rehabilitation protocols for stroke recovery and neuromodulation-driven motor learning.',
+    bio: 'Directs the NERD Lab at the University of Utah, applying transcranial brain stimulation and movement science to develop evidence-based rehabilitation protocols for stroke recovery and neuromodulation-driven motor learning.',
   },
   {
     name: 'Dr. Rohit Saluja',
@@ -252,7 +252,7 @@ const speakers = [
     affiliationUrl: 'https://www.iitmandi.ac.in',
     profileUrl: 'https://scee.iitmandi.ac.in/faculty_personal.php?id=4jqlmfy',
     photo: '/speakers/rohit-saluja.jpg',
-    bio: 'Develops computer-vision and applied machine-learning systems for human-interactive environments at IIT Mandi — his work in automated pose estimation and activity recognition has direct application in AI-mediated movement and breath analysis.',
+    bio: 'Develops computer-vision and applied machine-learning systems for human-interactive environments at IIT Mandi. His work in automated pose estimation and activity recognition has direct application in AI-mediated movement and breath analysis.',
   },
   {
     name: 'Dr. Kunal Mooley',
@@ -261,7 +261,7 @@ const speakers = [
     affiliationUrl: 'https://www.iitk.ac.in',
     profileUrl: 'https://www.iitk.ac.in/kunal-prakash-mooley',
     photo: '/speakers/kunal-mooley.png',
-    bio: 'Astrophysicist at IIT Kanpur whose gravitational-wave and radio-transient research — including landmark VLBI imaging of a neutron-star merger jet — is accompanied by co-founding an interdisciplinary institute at the intersection of physical science and consciousness studies.',
+    bio: 'Astrophysicist at IIT Kanpur whose gravitational-wave and radio-transient research, including landmark VLBI imaging of a neutron-star merger jet, is accompanied by co-founding an interdisciplinary institute at the intersection of physical science and consciousness studies.',
   },
 ]
 
@@ -317,7 +317,7 @@ export default function Home() {
           </h1>
 
           <p style={{ fontSize: 18, lineHeight: 1.75, color: 'rgba(228,232,241,0.75)', maxWidth: 600, marginBottom: 16 }}>
-            International Conference on Contemplative HealthTech and AI — the first sustained dialogue between ancient contemplative science and modern technology.
+            International Conference on Contemplative HealthTech and AI. The first sustained dialogue between ancient contemplative science and modern technology.
           </p>
           <p style={{ fontSize: 13, color: 'rgba(228,232,241,0.6)', marginBottom: 8, letterSpacing: '0.01em' }}>
             <span style={{ color: '#C69232', fontWeight: 600 }}>In-person venue:</span> IIT Delhi, New Delhi, India &nbsp;·&nbsp; Presenters and attendees welcome to join on-site
@@ -327,7 +327,7 @@ export default function Home() {
           </p>
 
           <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
-            <Link href="/register" className="btn btn-teal">Register — Free</Link>
+            <Link href="/register" className="btn btn-teal">Register Free</Link>
             <Link href="/schedule" className="hero-btn-outline">View Programme</Link>
           </div>
 
@@ -459,7 +459,7 @@ export default function Home() {
                 Three worlds.<br />One conversation.
               </h2>
               <p className="body" style={{ marginBottom: 20 }}>
-                ICCHAI 2026 is the inaugural edition of what is intended to become an annual gathering — a space where Indian Knowledge Systems and Western empirical science meet as equal partners in inquiry.
+                ICCHAI 2026 is the inaugural edition of what is intended to become an annual gathering, a space where Indian Knowledge Systems and Western empirical science meet as equal partners in inquiry.
               </p>
               <p className="body" style={{ marginBottom: 20 }}>
                 Not as tradition waiting to be validated by science, or science imposing itself on tradition. Yoga, meditation and mindfulness carry centuries of lived, experiential knowledge about regulating the breath, the nervous system, and the mind.
@@ -472,8 +472,8 @@ export default function Home() {
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
               {[
-                { heading: 'Ancient Practice', body: 'Centuries of lived knowledge on regulating the breath, nervous system, and mind — refined through direct experiential inquiry across traditions.' },
-                { heading: 'Modern Science', body: 'Three decades of rigorous evidence — neuroimaging, HRV, EEG — that formally documents what contemplative traditions have described experientially.' },
+                { heading: 'Ancient Practice', body: 'Centuries of lived knowledge on regulating the breath, nervous system, and mind; refined through direct experiential inquiry across traditions.' },
+                { heading: 'Modern Science', body: 'Three decades of rigorous evidence, including neuroimaging, HRV and EEG studies, that formally documents what contemplative traditions have described experientially.' },
                 { heading: 'Emerging Technology', body: 'AI and digital health tools that can measure, personalise and deliver contemplative practices at a scale no individual teacher or clinic could reach alone.' },
               ].map(item => (
                 <div key={item.heading} style={{ padding: '28px 32px', background: 'var(--surface-3)', borderRadius: 8, borderLeft: '2px solid var(--teal)' }}>
@@ -518,7 +518,7 @@ export default function Home() {
               <h2 className="headline">Six areas of inquiry</h2>
             </div>
             <p className="body" style={{ maxWidth: 400 }}>
-              From foundational neuroscience to applied AI to ethical responsibility — each pillar is a distinct layer of the conversation.
+              From foundational neuroscience to applied AI to ethical responsibility; each pillar is a distinct layer of the conversation.
             </p>
           </div>
 
@@ -561,7 +561,7 @@ export default function Home() {
                 theme: 'The Science of Self-Regulation',
                 sub: 'Mindfulness, HRV, Biofeedback and the Nervous System',
                 plenary: 'Guided slow-paced breathing with live HRV biofeedback',
-                tracks: ['Research — EEG to Wearables', 'Clinical — Digital Therapeutics', 'Traditional — Mindfulness & AI'],
+                tracks: ['Research: EEG to Wearables', 'Clinical: Digital Therapeutics', 'Traditional: Mindfulness and AI'],
                 accent: 'var(--teal)',
               },
               {
@@ -569,7 +569,7 @@ export default function Home() {
                 theme: 'AI & Digital Therapeutics',
                 sub: 'In Yoga, Meditation and Contemplative Practice',
                 plenary: 'Can AI Deliver Contemplative Care Responsibly?',
-                tracks: ['Research — IKS & AI', 'Clinical — Digital Therapeutics', 'Technology — Responsible AI'],
+                tracks: ['Research: IKS and AI', 'Clinical: Digital Therapeutics', 'Technology: Responsible AI'],
                 accent: 'var(--muted-light)',
               },
             ].map(d => (
@@ -654,7 +654,7 @@ export default function Home() {
               Across contemplative science, clinical care and emerging technology
             </h2>
             <p className="body" style={{ maxWidth: 420 }}>
-              Researchers, clinicians and scholars whose work runs through the conference&rsquo;s six pillars — from classical textual scholarship to AI-driven rehabilitation and biosignal science.
+              Researchers, clinicians and scholars whose work runs through the conference&rsquo;s six pillars, from classical textual scholarship to AI-driven rehabilitation and biosignal science.
             </p>
           </div>
 
@@ -701,19 +701,19 @@ export default function Home() {
               {
                 title: 'Meta-Meditation for Mental Health Routage',
                 author: 'Dr. Steve Haberlin',
-                note: 'Day 1 Launch — October 22, 2026',
+                note: 'Day 1 Launch, October 22, 2026',
                 cover: '/images/Meta-MeditationforMentalHealth.png',
               },
               {
                 title: 'Sūtra to Sensor: HealthTech in IKS Blue One Inc.',
                 author: 'Satyam Tiwari',
-                note: 'Day 1 Launch — October 22, 2026',
+                note: 'Day 1 Launch, October 22, 2026',
                 cover: '/images/sutratosensorbookcover.png',
               },
               {
                 title: 'Applying Therapeutic Yoga in Integrative Health: A Guide for Re-Imagining Well-Being',
                 author: 'Prof. Amy Wheeler-Mantoan & Marlysa Sullivan',
-                note: 'Day 2 Launch — October 23, 2026',
+                note: 'Day 2 Launch, October 23, 2026',
                 cover: '/images/amybookimage.jpg',
               },
             ].map(book => (
@@ -741,6 +741,58 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ─── FAQ ────────────────────────────────────────────── */}
+      <section id="faq" className="section" style={{ background: 'var(--surface)', borderTop: '1px solid var(--border)' }}>
+        <div className="container">
+          <p className="label" style={{ marginBottom: 20 }}>Common Questions</p>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: 56, flexWrap: 'wrap', gap: 24 }}>
+            <h2 className="headline" style={{ maxWidth: 480 }}>Frequently Asked Questions</h2>
+            <p className="body" style={{ maxWidth: 380 }}>Everything you need to know before you register.</p>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: 2, background: 'var(--border)' }}>
+            {[
+              {
+                q: 'What is ICCHAI 2026?',
+                a: 'ICCHAI 2026 is the International Conference on Contemplative HealthTech and AI, taking place on October 22 and 23, 2026. It is a free hybrid event held in-person at IIT Delhi, New Delhi and simultaneously online worldwide.',
+              },
+              {
+                q: 'Is attendance free?',
+                a: 'Yes. Registration and attendance are completely free for all participants, whether joining in-person at IIT Delhi or online from anywhere in the world.',
+              },
+              {
+                q: 'Who should attend?',
+                a: 'The conference welcomes researchers, clinicians, yoga therapists, AI engineers, digital health professionals, students, and anyone genuinely interested in the intersection of contemplative practice and technology.',
+              },
+              {
+                q: 'What topics does the conference cover?',
+                a: 'Six research pillars: Contemplative Neuroscience and Self-Regulation; Yoga, Ayurveda and Indian Knowledge Systems; AI and Digital Therapeutics; Biofeedback, Wearables and Biosignal Science; Clinical Translation and Digital Health Delivery; Ethics, Responsibility and the Future of the Field.',
+              },
+              {
+                q: 'Can I present research at ICCHAI 2026?',
+                a: 'Yes. Researchers and practitioners are invited to submit work for consideration. Register on this site and watch for the formal call for abstracts announcement.',
+              },
+              {
+                q: 'Where is the in-person venue?',
+                a: 'The in-person sessions are hosted at IIT Delhi by the National Resource Centre for Value Education in Engineering (NRCVEE), Hauz Khas, New Delhi, India.',
+              },
+              {
+                q: 'What time does the conference run?',
+                a: 'Each day runs from 18:30 to 22:30 IST, which is 9:00 am to 1:00 pm EST and 3:00 pm to 7:00 pm CET. The schedule is designed to be accessible across major international time zones.',
+              },
+              {
+                q: 'How do I register?',
+                a: 'Click Register Free on this page. Fill in your details, select your areas of interest, and you will receive confirmation immediately. No payment is required at any stage.',
+              },
+            ].map(({ q, a }) => (
+              <div key={q} style={{ background: 'var(--surface)', padding: '32px 36px' }}>
+                <h3 style={{ fontSize: 15, fontWeight: 700, color: 'var(--foreground)', marginBottom: 12, lineHeight: 1.4, letterSpacing: '-0.01em' }}>{q}</h3>
+                <p style={{ fontSize: 14, color: 'var(--muted-light)', lineHeight: 1.75 }}>{a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ─── FINAL CTA ──────────────────────────────────────── */}
       <section className="section-lg" style={{ background: 'var(--background)' }}>
         <div className="container" style={{ textAlign: 'center' }}>
@@ -752,10 +804,10 @@ export default function Home() {
             Registration is free. Join neuroscientists, yoga therapists, AI researchers, clinicians and technologists from across seven institutions and multiple countries.
           </p>
           <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <Link href="/register" className="btn btn-teal" style={{ padding: '14px 36px', fontSize: 15 }}>Register — Free</Link>
+            <Link href="/register" className="btn btn-teal" style={{ padding: '14px 36px', fontSize: 15 }}>Register Free</Link>
             <Link href="/schedule" className="btn btn-outline" style={{ padding: '14px 36px', fontSize: 15 }}>View Programme</Link>
           </div>
-          <p className="caption" style={{ marginTop: 24 }}>Hybrid — In-person at IIT Delhi, New Delhi &nbsp;·&nbsp; Online worldwide &nbsp;·&nbsp; 18:30–22:30 IST &nbsp;·&nbsp; Free to attend</p>
+          <p className="caption" style={{ marginTop: 24 }}>Hybrid, in-person at IIT Delhi, New Delhi &nbsp;·&nbsp; Online worldwide &nbsp;·&nbsp; 18:30–22:30 IST &nbsp;·&nbsp; Free to attend</p>
         </div>
       </section>
     </>

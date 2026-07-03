@@ -15,7 +15,7 @@ export default async function DashboardPage() {
   if (!user) redirect('/login')
 
   const interests = user.interests ? user.interests.split(',').filter(Boolean) : []
-  const attendanceLabel = user.attendance === 'both' ? 'Both Days (Oct 22–23)' : user.attendance === 'day1' ? 'Day 1 — October 22' : 'Day 2 — October 23'
+  const attendanceLabel = user.attendance === 'both' ? 'Both Days (Oct 22–23)' : user.attendance === 'day1' ? 'Day 1, October 22' : 'Day 2, October 23'
 
   return (
     <div style={{ minHeight: '100vh', background: 'var(--background)', paddingTop: 68 }}>
@@ -37,9 +37,9 @@ export default async function DashboardPage() {
         <div style={{ padding: '28px 36px', background: 'rgba(0,184,181,0.04)', border: '1px solid var(--teal-border)', borderRadius: 8, marginBottom: 40, display: 'flex', gap: 24, alignItems: 'flex-start', flexWrap: 'wrap' }}>
           <div style={{ width: 3, background: 'var(--teal)', borderRadius: 2, alignSelf: 'stretch', flexShrink: 0 }} />
           <div>
-            <p style={{ fontWeight: 700, fontSize: 16, marginBottom: 6 }}>Registration confirmed — ICCHAI 2026</p>
+            <p style={{ fontWeight: 700, fontSize: 16, marginBottom: 6 }}>Registration confirmed for ICCHAI 2026</p>
             <p className="body" style={{ fontSize: 14, marginBottom: 16 }}>
-              October 22–23, 2026 &nbsp;·&nbsp; Hybrid — IIT Delhi & Online &nbsp;·&nbsp; 18:30–22:30 IST / 9:00 am–1:00 pm EST
+              October 22–23, 2026 &nbsp;·&nbsp; Hybrid, IIT Delhi and Online &nbsp;·&nbsp; 18:30–22:30 IST / 9:00 am–1:00 pm EST
             </p>
             <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
               <span className="chip chip-teal" style={{ fontSize: 11 }}>Registered</span>
@@ -107,7 +107,7 @@ export default async function DashboardPage() {
           <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--muted)', marginBottom: 24 }}>Conference Details</p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: 24 }}>
             {[
-              { label: 'Format', value: 'Hybrid — IIT Delhi + Online' },
+              { label: 'Format', value: 'Hybrid, IIT Delhi and Online' },
               { label: 'Dates', value: 'October 22–23, 2026' },
               { label: 'Time (IST)', value: '18:30–22:30' },
               { label: 'Time (EST)', value: '9:00 am–1:00 pm' },

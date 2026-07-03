@@ -18,8 +18,8 @@ const pillars = [
 ]
 const attendance = [
   { value: 'both', label: 'Both Days', sub: 'October 22–23, 2026' },
-  { value: 'day1', label: 'Day 1 Only', sub: 'October 22 — The Science of Self-Regulation' },
-  { value: 'day2', label: 'Day 2 Only', sub: 'October 23 — AI & Digital Therapeutics' },
+  { value: 'day1', label: 'Day 1 Only', sub: 'October 22: The Science of Self-Regulation' },
+  { value: 'day2', label: 'Day 2 Only', sub: 'October 23: AI and Digital Therapeutics' },
 ]
 
 const stepLabels = ['Personal Info', 'Background', 'Preferences']
@@ -69,7 +69,7 @@ export default function RegisterPage() {
           <h1 style={{ fontSize: 'clamp(28px, 4vw, 40px)', fontWeight: 800, letterSpacing: '-0.03em', marginBottom: 8 }}>
             Register for ICCHAI 2026
           </h1>
-          <p className="body">October 22–23, 2026 · Hybrid — In-person at IIT Delhi, New Delhi & Online Worldwide · Free to attend</p>
+          <p className="body">October 22–23, 2026 · Hybrid, in-person at IIT Delhi, New Delhi and online worldwide · Free to attend</p>
         </div>
 
         {/* Step indicator */}

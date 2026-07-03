@@ -127,7 +127,7 @@ export default function Navbar() {
           ))}
           <hr style={{ border: 'none', borderTop: '1px solid rgba(26,12,8,0.09)' }} />
           <Link href="/login" className="btn btn-outline" style={{ textAlign: 'center', justifyContent: 'center' }} onClick={() => setOpen(false)}>Sign in</Link>
-          <Link href="/register" className="btn btn-teal" style={{ textAlign: 'center', justifyContent: 'center' }} onClick={() => setOpen(false)}>Register — Free</Link>
+          <Link href="/register" className="btn btn-teal" style={{ textAlign: 'center', justifyContent: 'center' }} onClick={() => setOpen(false)}>Register Free</Link>
         </div>
       )}
 

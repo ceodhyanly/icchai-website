@@ -1,0 +1,72 @@
+# ICCHAI 2026 — International Conference on Contemplative HealthTech and AI
+
+> A free hybrid academic conference at the intersection of yoga, meditation, AI, and digital health technology.
+
+## What is ICCHAI 2026?
+
+ICCHAI 2026 is the International Conference on Contemplative HealthTech and AI, held October 22–23, 2026 as a free hybrid event. In-person sessions take place at the National Resource Centre for Value Education in Engineering (NRCVEE), IIT Delhi, New Delhi, India. Online attendance is available worldwide at the same times: 18:30–22:30 IST / 9:00 am–1:00 pm EST / 3:00–7:00 pm CET.
+
+## Organizers
+
+- Primary Organiser: YogaXBiofeedback Pvt Ltd (Dhyanly) — https://www.dhyanly.com
+- Convening Institution: The India Center, University of Central Florida (UCF) — https://www.ucf.edu
+- Institutional Partner: Notre Dame of Maryland University, School of Integrative Health (SOIH)
+- Venue and Partner: IIT Delhi, NRCVEE, New Delhi, India
+
+## Conveners
+
+- Satyam Tiwari — Convener, ICCHAI 2026. Founder, YogaXBiofeedback Pvt Ltd (Dhyanly). SRF, IIT Mandi.
+- Dr. Steve Haberlin — Co-Convener. Assistant Professor, University of Central Florida.
+- Prof. Amy Wheeler-Mantoan — Chair, Academic Programme Committee. Notre Dame of Maryland University.
+- Aditya Pandey — Head of Partnerships and Sponsorships India. IIT Mandi.
+
+## Confirmed Speakers
+
+- Shri Akhilesh Mishra — Former Ambassador of India to Ireland and High Commissioner to the Maldives
+- Prof. Christopher Key Chapple — Doshi Professor, Loyola Marymount University; Director, MA in Yoga Studies
+- Dr. Steve Haberlin — University of Central Florida
+- Prof. Amy Wheeler-Mantoan — Notre Dame of Maryland University
+- Satyam Tiwari — Founder, YogaXBiofeedback Pvt Ltd (Dhyanly); IIT Mandi
+- Prof. James Gomes — Professor, IIT Delhi; Chair, NRCVEE Research Committee
+- Dr. Amit Sethi — Director, NERD Lab, University of Utah
+- Dr. Rohit Saluja — Assistant Professor, IIT Mandi
+- Dr. Kunal Mooley — Assistant Professor, IIT Kanpur
+
+## Six Research Pillars
+
+1. Contemplative Neuroscience and Self-Regulation — EEG, HRV, neuroimaging, pranayama, mindfulness-based interventions
+2. Yoga, Ayurveda and Indian Knowledge Systems — yoga therapy, Ayurvedic frameworks, Svara Shastra, classical texts
+3. AI and Digital Therapeutics — AI-powered breath recognition, meditation-state classification, generative AI coaching
+4. Biofeedback, Wearables and Biosignal Science — HRV wearables, real-time physiological monitoring, biosignal processing
+5. Clinical Translation and Digital Health Delivery — telehealth, clinical trial design, integration into healthcare systems
+6. Ethics, Responsibility and the Future — data privacy, cultural authenticity, AI transparency, policy frameworks (AYUSH, DST, WHO)
+
+## Programme Format
+
+Each conference day runs four hours in the evening IST (accessible globally). The format includes:
+- Opening contemplative practice (breathing or movement)
+- Three spotlight talks (20 min each)
+- Plenary panel discussion
+- Three simultaneous 75-minute breakout tracks (Research / Clinical / Traditional or Technology)
+- Book launches or demo sessions
+- Closing synthesis or mindfulness practice
+
+## Book Launches at ICCHAI 2026
+
+- "Meta-Meditation for Mental Health Routage" by Dr. Steve Haberlin (Day 1)
+- "Sutra to Sensor: HealthTech in IKS" by Satyam Tiwari (Day 1)
+- "Applying Therapeutic Yoga in Integrative Health" by Prof. Amy Wheeler-Mantoan and Marlysa Sullivan (Day 2)
+
+## Key Facts
+
+- Dates: October 22–23, 2026
+- Format: Hybrid (in-person at IIT Delhi + online worldwide)
+- Cost: Free to attend
+- Registration: https://icchai2026.org/register
+- Schedule: https://icchai2026.org/schedule
+- Contact: info@icchai2026.org
+- Inaugural edition; intended as an annual conference
+
+## Topics Covered
+
+Contemplative HealthTech, AI in healthcare, yoga therapy, Ayurveda, Indian Knowledge Systems, contemplative neuroscience, EEG, HRV biofeedback, digital therapeutics, mindfulness-based interventions, biosignal science, wearable health technology, responsible AI, AI ethics in mental health, telehealth, Svara Yoga, pranayama science, polyvagal theory, meditation-state classification, generative AI, LLM safety, data privacy.
